@@ -264,15 +264,15 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:src="@drawable/send"
-            app:layout_constraintBottom_toBottomOf="@+id/etCommentField"
-            app:layout_constraintEnd_toEndOf="@+id/etCommentField"
-            app:layout_constraintTop_toTopOf="@+id/etCommentField" />
+            app:layout_constraintBottom_toBottomOf="@+id/etCommentTextField"
+            app:layout_constraintEnd_toEndOf="@+id/etCommentTextField"
+            app:layout_constraintTop_toTopOf="@+id/etCommentTextField" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="etCommentField,imageView45" />
+            app:constraint_referenced_ids="etCommentTextField,imageView45" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerComments"
@@ -282,7 +282,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="24dp"
-            app:layout_constraintBottom_toTopOf="@+id/etCommentField"
+            app:layout_constraintBottom_toTopOf="@+id/etCommentTextField"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />

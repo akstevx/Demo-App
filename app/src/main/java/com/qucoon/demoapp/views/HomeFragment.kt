@@ -49,6 +49,15 @@ class HomeFragment : BaseFragment() {
         carViewModel.getCarList()
     }
 
+    private fun setObservers() {
+        setUpObservers(carViewModel)
+        carViewModel.getCarsResponse.observeChange(viewLifecycleOwner){
+            carList = it
+            updateRecycler(it)
+            setUpAllSearch()
+        }
+    }
+
     private fun setUpAllSearch() {
         etSearchField.doAfterTextChanged {query ->
             val possibleItems = carList.filter { it.model.contains(query!!,true) ?: false }
@@ -56,17 +65,9 @@ class HomeFragment : BaseFragment() {
         }
     }
 
-    private fun setObservers() {
-        setUpObservers(carViewModel)
-        carViewModel.getCarsResponse.observeChange(viewLifecycleOwner){
-            updateRecycler(it)
-            setUpAllSearch()
-        }
-    }
-
     private fun updateRecycler(carList: List<GetCarsResponseElement>) {
         println("listOfCars: ${carList.size}")
-        recyclerView.updateRecycler(requireContext(), carList.take(10), R.layout.item_car, listOf(R.id.txtPriceTag,R.id.txtCarModel, R.id.txtHorsepower,
+        recyclerView.updateRecycler(requireContext(), carList.take(15), R.layout.item_car, listOf(R.id.txtPriceTag,R.id.txtCarModel, R.id.txtHorsepower,
             R.id.txtReleaseYear, R.id.ivCarPicture), { innerViews, position ->
             val amount = innerViews[R.id.txtPriceTag] as TextView
             val model = innerViews[R.id.txtCarModel] as TextView

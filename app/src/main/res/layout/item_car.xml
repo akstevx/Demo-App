@@ -46,7 +46,7 @@
                 android:fontFamily="@font/brfirma_semibold"
                 android:text="Price: $31,890.00"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 app:layout_constraintStart_toEndOf="@+id/ivCarPicture"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +59,7 @@
                 android:fontFamily="@font/brfirma_semibold"
                 android:text="Car model: Acura ilx"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/txtPriceTag"
@@ -73,7 +73,7 @@
                 android:fontFamily="@font/brfirma_semibold"
                 android:text="Horsepower: 201 Mph"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="@+id/txtCarModel"
                 app:layout_constraintTop_toBottomOf="@+id/txtCarModel" />
 
@@ -85,7 +85,7 @@
                 android:fontFamily="@font/brfirma_semibold"
                 android:text="Year: 2016"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="@+id/txtHorsepower"
                 app:layout_constraintTop_toBottomOf="@+id/txtHorsepower" />
 
