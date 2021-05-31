@@ -324,13 +324,13 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:fontFamily="@font/productsans_regular"
             android:text="Model Year:"
             android:textColor="#CC081152"
             android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/txtProductLocation"
-            app:layout_constraintEnd_toStartOf="@+id/textView6"
-            app:layout_constraintStart_toStartOf="@+id/txtProductAmount" />
+            app:layout_constraintEnd_toStartOf="@+id/textView6" />
 
         <TextView
             android:id="@+id/textView6"
