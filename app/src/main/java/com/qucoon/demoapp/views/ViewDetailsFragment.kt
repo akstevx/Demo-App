@@ -51,6 +51,13 @@ class ViewDetailsFragment : BaseFragment() {
         btnContactAgent.setOnClickListener { showToast("Agent has been contacted") }
         txtProductAmount.text = car.price.toString().formatNumberDollars()
         textView5.text = "${car.make} ${car.model}".capitalizeWords()
+        imageView45.setOnClickListener {
+            if (etCommentField.text.toString().isNullOrEmpty()) showToast("Kidly enter a comment and try again")
+            else {
+                etCommentField.setText("")
+                showToast("Comment added to queue")
+            }
+        }
         imageView3.loadImage(car.img_url, R.drawable.dummy_car, this)
         setUpCommentRecycler()
     }
