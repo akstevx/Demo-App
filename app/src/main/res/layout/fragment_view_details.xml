@@ -42,6 +42,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
+                android:textColor="@color/white"
                 android:layout_marginBottom="8dp"
                 android:background="@color/space_transparent"
                 android:hint="Type a comment..."
@@ -126,15 +127,14 @@
             android:id="@+id/txtProductAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_bold"
             android:text="₦149,200,000.00"
             android:textColor="#CC081152"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/txtProductTitle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/imageView36"
             app:layout_constraintTop_toTopOf="@+id/txtProductTitle" />
 
@@ -300,11 +300,10 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:src="@drawable/dummy_car"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -325,24 +324,24 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Model Year:"
             android:fontFamily="@font/productsans_regular"
+            android:text="Model Year:"
             android:textColor="#CC081152"
             android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/txtProductLocation"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
             app:layout_constraintStart_toStartOf="@+id/txtProductAmount" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="2016"
             android:fontFamily="@font/poppins_bold"
+            android:text="2016"
             android:textColor="#CC081152"
             android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
-            app:layout_constraintStart_toEndOf="@+id/textView4" />
+            app:layout_constraintEnd_toEndOf="@+id/txtProductAmount" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

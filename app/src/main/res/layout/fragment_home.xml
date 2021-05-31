@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".views.HomeFragment">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -14,18 +15,25 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/white"
         android:textColorHint="@color/hint_selector"
         app:boxStrokeColor="@color/stroke_selector"
+        android:background="#FFFFFF"
         android:hint="Find a car?"
         app:hintTextColor="#B3B3B3"
+        app:boxStrokeErrorColor="#BFEF3F35"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmailAddress3"
+            android:id="@+id/etSearchField"
             android:textSize="13sp"
+            android:background="@null"
             android:textColor="#CC707070"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,16 +43,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="1dp"
-        app:strokeColor="#4D000000"
-        app:strokeWidth="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/outlinedTextField3"
-        tools:layout_editor_absoluteX="188dp">
+        app:strokeColor="#4D000000"
+        app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -57,10 +69,13 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/imageView2"

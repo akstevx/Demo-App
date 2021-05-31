@@ -10,13 +10,14 @@ import android.widget.TextView
 import com.qucoon.demoapp.R
 import com.qucoon.demoapp.base.BaseFragment
 import com.qucoon.demoapp.models.Car
+import com.qucoon.demoapp.models.GetCarsResponseElement
 import com.qucoon.demoapp.utils.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_view_details.*
 import java.io.Serializable
 
 class ViewDetailsFragment : BaseFragment() {
-    private val car:Car by argument(CAR)
+    private val car:GetCarsResponseElement by argument(CAR)
 
     data class Comment(
         val comment:String,
@@ -49,7 +50,8 @@ class ViewDetailsFragment : BaseFragment() {
         btnbookProduct.setOnClickListener { showToast("Product has been booked") }
         btnContactAgent.setOnClickListener { showToast("Agent has been contacted") }
         txtProductAmount.text = car.price.toString().formatNumberDollars()
-        txtProductTitle.text = "${car.make} ${car.model}".capitalizeWords()
+        textView5.text = "${car.make} ${car.model}".capitalizeWords()
+        imageView3.loadImage(car.img_url, R.drawable.dummy_car, this)
         setUpCommentRecycler()
     }
 
@@ -75,7 +77,7 @@ class ViewDetailsFragment : BaseFragment() {
 
     companion object {
         val CAR = "car"
-        fun newInstance(car:Car): ViewDetailsFragment{
+        fun newInstance(car:GetCarsResponseElement): ViewDetailsFragment{
             return ViewDetailsFragment().withArguments(CAR to car as Serializable)
         }
     }

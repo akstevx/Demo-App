@@ -12,7 +12,7 @@ interface CarRepository {
 class CarRepositoryImpl(private val networkAPI: NetworkAPI): BaseRepository(), CarRepository{
 
     override suspend fun getCarList(): UseCaseResult<GetCarsResponse> {
-        return safeGetApiCall( networkAPI::getCars, { it.data.isNotEmpty() }, { })
+        return safeGetApiCall( networkAPI::getCars, {it.isNotEmpty() }, { })
     }
 
 }
