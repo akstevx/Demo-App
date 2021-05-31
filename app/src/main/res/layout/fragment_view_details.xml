@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.ViewDetailsFragment">
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brfirma_medium"
+            android:text="HorsePower:"
+            android:textColor="#CC081152"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+            app:layout_constraintStart_toStartOf="@+id/txtProductTitle"
+            app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etCommentField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingTop="5dp"
+            android:visibility="visible"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailLogin"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/space_transparent"
+                android:hint="Type a comment..."
+                android:inputType="text"
+                android:maxLines="4"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/forward_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#081152" />
+
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/line2"
+            android:backgroundTint="#3300FFF3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/line2"
+            android:backgroundTint="#3300FFF3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContactAgent" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:background="@drawable/line2"
+            android:backgroundTint="#3300FFF3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView43" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line2"
+            android:backgroundTint="#3300FFF3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProductTitle" />
+
+        <TextView
+            android:id="@+id/txtProductTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="Price:"
+            android:textColor="#081152"
+            app:layout_constraintEnd_toStartOf="@+id/imageView36"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+        <TextView
+            android:id="@+id/txtProductAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="₦149,200,000.00"
+            android:textColor="#CC081152"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtProductTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView36"
+            app:layout_constraintTop_toTopOf="@+id/txtProductTitle" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@drawable/line3"
+            android:backgroundTint="#3300FFF3"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/imageView35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView34"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@drawable/line3"
+            android:backgroundTint="#3300FFF3"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+        <TextView
+            android:id="@+id/txtProductLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="218 Mph,"
+            android:textColor="#CC081152"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView44"
+            app:layout_constraintStart_toEndOf="@+id/imageView43"
+            app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Description"
+            android:textColor="#CC081152"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+        <TextView
+            android:id="@+id/txtProductDescription"
+            android:fontFamily="@font/productsans_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:lineSpacingExtra="3dp"
+            android:text="Lorem ipsum dolor sit amet,  adipiscing elit,  do eiusmod tempor. Ut exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+            android:textColor="#CC081152"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContactAgent"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Contact"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:icon="@drawable/contact"
+            app:iconGravity="textStart"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProductDescription"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnbookProduct"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:icon="@drawable/tick"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btnContactAgent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnContactAgent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Comments "
+            android:textColor="#081152"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/imageView44" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/send"
+            app:layout_constraintBottom_toBottomOf="@+id/etCommentField"
+            app:layout_constraintEnd_toEndOf="@+id/etCommentField"
+            app:layout_constraintTop_toTopOf="@+id/etCommentField" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="etCommentField,imageView45" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerComments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/etCommentField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/space_transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/dummy_car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Acura Ilx"
+            android:textColor="#CC081152"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Year:"
+            android:fontFamily="@font/productsans_regular"
+            android:textColor="#CC081152"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtProductLocation"
+            app:layout_constraintStart_toStartOf="@+id/txtProductAmount" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="2016"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#CC081152"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

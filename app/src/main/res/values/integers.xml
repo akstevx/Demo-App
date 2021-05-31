@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="labels_animation_duration">350</integer>
+    <integer name="snackbar_duration">2000</integer>
+    <string name="pecentage">0.2</string>
+
+</resources>

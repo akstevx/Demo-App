@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingRoot"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8F2E2E2E"
+        android:visibility="gone">
+
+        <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+            android:id="@+id/loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            ripple:duration="1000"
+            ripple:endRadius="100dp"
+            ripple:rippleColor="#99EF3F35"
+            ripple:rippleType="fill"
+            ripple:startRadius="42dp"
+            ripple:strokeWidth="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/loader_ic" />
+        </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
